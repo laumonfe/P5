@@ -1,0 +1,14 @@
+﻿  Source.cpp
+c:\users\midtnight\source\repos\project1\project1\source.cpp(149): warning C4101: 'Errcode': unreferenced local variable
+c:\users\midtnight\source\repos\project1\project1\source.cpp(205): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(214): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(244): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(254): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(311): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(312): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(313): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(381): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(382): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(383): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(419): warning C4101: 'input': unreferenced local variable
+  Project1.vcxproj -> C:\Users\Midtnight\source\repos\Project1\x64\Debug\Project1.exe

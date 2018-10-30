@@ -1,0 +1,12 @@
+﻿  Source.cpp
+c:\users\midtnight\source\repos\project1\project1\source.cpp(156): warning C4101: 'Errcode': unreferenced local variable
+c:\users\midtnight\source\repos\project1\project1\source.cpp(209): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(212): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(234): warning C4018: '<': signed/unsigned mismatch
+c:\users\midtnight\source\repos\project1\project1\source.cpp(241): warning C4018: '<': signed/unsigned mismatch
+c:\users\midtnight\source\repos\project1\project1\source.cpp(243): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(244): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(245): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\midtnight\source\repos\project1\project1\source.cpp(251): warning C4018: '<': signed/unsigned mismatch
+c:\users\midtnight\source\repos\project1\project1\source.cpp(265): warning C4018: '<': signed/unsigned mismatch
+opencv_world331d.lib(opencv_world331d.dll) : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'x86'
