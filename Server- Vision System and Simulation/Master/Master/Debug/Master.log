@@ -1,0 +1,6 @@
+﻿  Source.cpp
+d:\dokumenter\skole\uni robotics\5. semester\p5\bad-egg-spotter\master\master\source.cpp(34): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+d:\dokumenter\skole\uni robotics\5. semester\p5\bad-egg-spotter\master\master\source.cpp(40): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+d:\dokumenter\skole\uni robotics\5. semester\p5\bad-egg-spotter\master\master\source.cpp(47): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+d:\dokumenter\skole\uni robotics\5. semester\p5\bad-egg-spotter\master\master\source.cpp(55): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+  Master.vcxproj -> D:\Dokumenter\Skole\Uni Robotics\5. Semester\P5\Bad-egg-spotter\Master\Debug\Master.exe
