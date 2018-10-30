@@ -1,0 +1,86 @@
+PROGRAM PLC_PRG
+VAR
+	UI_State: INT := 0;
+	RFID: dc_ecp.Dtm425;
+	DataSt: dc_ecp.st_CPF_RfidData;
+	TCPClient: dc_ecp.TcpClientString;
+	IP_Addr: STRING := '172.20.100.67';
+	Port_Nr: UINT := 11111;
+	SizeMsg: INT := 256;
+	Msg: STRING := '';
+	RMsg: STRING := '';
+	CarrierID: DWORD;
+END_VAR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CASE UI_STATE OF
+	0:
+		RFID.ClearError();
+		UI_State:=1;
+		GVL.xQA1_RIGHT:=TRUE;
+	1:
+		IF RFID.xReady THEN
+			UI_State:=2;
+		END_IF
+	2:
+		RFID.Connect(usiNodeId:=32, usiNetworkId:=0, usiChannel:=1);
+		UI_State:=3;
+	3:
+		IF RFID.xConnected THEN
+			UI_State:=4;
+		END_IF
+	4:
+		RFID.ReadTag(uiStartAddress:= 0, uiDataLength := SIZEOF(DataSt), ADR(DataSt));
+		UI_State:=5;
+	5:
+		IF RFID.xReady THEN
+			CarrierID := dc_ecp.SwapWORD(DataSt.uiCarrierID);
+			UI_State:=6;
+		END_IF
+	6:
+		TCPClient.Reset();
+		UI_State:=7;
+	7:
+		IF TCPClient.xReady THEN
+			UI_State:=8;
+		END_IF
+	8:
+		TCPClient.Connect(sIP:=IP_Addr, uiPort:=(Port_Nr));
+		UI_State:=9;
+	9:
+		IF TCPClient.xConnected THEN
+			UI_State:=10;
+		END_IF
+	10:
+		IF TCPClient.xReady THEN
+			Msg := DWORD_TO_STRING(CarrierID);
+			TCPClient.SendAndReceive(Msg);
+			UI_State:=11;
+		END_IF
+	11:
+		IF TCPClient.xReady THEN
+			RMsg := TCPClient.sReceived;
+			UI_State:=13;
+		END_IF
+	12:
+
+
+	
+END_CASE
+RFID();
+TCPClient();
+//DataSt();
